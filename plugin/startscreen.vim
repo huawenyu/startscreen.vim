@@ -19,7 +19,7 @@ set cpo&vim
 
 " The default function; show a fortune
 fun! startscreen#fortune()
-	let l:fortune = systemlist('fortune -a')
+	let l:fortune = systemlist('vim --version')
 	call append('0', ['', ''] + map(l:fortune, '"        " . v:val'))
 	:1
 	redraw!
