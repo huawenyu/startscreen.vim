@@ -67,6 +67,9 @@ fun! startscreen#start()
 
 	" When we go to insert mode start a new buffer, and start insert
 	nnoremap <buffer><silent> e :enew<CR>
+	nnoremap <buffer><silent> q :enew<CR>
+	nnoremap <buffer><silent> <Enter> :enew<CR>
+
 	nnoremap <buffer><silent> i :enew <bar> startinsert<CR>
 	nnoremap <buffer><silent> o :enew <bar> startinsert<CR><CR>
 	nnoremap <buffer><silent> p :enew<CR>p
